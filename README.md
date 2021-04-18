@@ -13,4 +13,4 @@ This repository contains some examples of programs built in Python:
 
 **- TimeCalculator**
 
-Details of the projects are provided in the README file in their respective folders.
+Details of the projects are provided in the README file located in their respective folders.
