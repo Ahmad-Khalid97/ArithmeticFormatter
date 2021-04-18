@@ -66,6 +66,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\TimeCalculator\README.md">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\TimeCalculator\main.py">
           <value>
             <Attribute>
