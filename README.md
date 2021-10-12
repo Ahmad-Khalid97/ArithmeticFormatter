@@ -1,5 +1,5 @@
-# PythonProjectExamples
-Python Project Examples
+# Python
+Python Projects
 
 This repository contains the following programs built in Python:
 
