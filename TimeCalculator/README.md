@@ -5,13 +5,14 @@ A function named `add_time` is written that shall take in two required parameter
 * a duration time that indicates the number of hours and minutes
 * (optional) a starting day of the week, case insensitive
 
-The function shall add the duration time to the start time and return the result.
+The function will add the duration time to the start time and return the result.
 
-If the result will be the next day, it shall show `(next day)` after the time. If the result will be more than one day later, it shall show `(n days later)` after the time, where "n" is the number of days later.
+If the result will be the next day, it will show `(next day)` after the time. If the result will be more than one day later, it will show `(n days later)` after the time, where "n" is the number of days later.
 
-If the function is given the optional starting day of the week parameter, then the output shall display the day of the week of the result. The day of the week in the output shall appear after the time and before the number of days later.
+If the function is given the optional starting day of the week parameter, then the output displays the day of the week of the result. The day of the week in the output will appear after the time and before the number of days later.
 
-Below are some examples of different cases the function should handle. Pay close attention to the spacing and punctuation of the results.
+Below are some examples of different cases the function handles.
+
 ```py
 add_time("3:00 PM", "3:10")
 # Returns: 6:10 PM
