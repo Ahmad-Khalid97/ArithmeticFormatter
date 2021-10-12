@@ -1,16 +1,16 @@
 # PythonProjectExamples
 Python Project Examples
 
-This repository contains some examples of programs built in Python:
+This repository contains the following programs built in Python:
 
 **- Arithmetic Formatter**
 
-**- BudgetApp**
+**- Budget App**
 
 **- Probability Calculator**
 
-**- ShapeCalculator**
+**- Shape Calculator**
 
-**- TimeCalculator**
+**- Time Calculator**
 
 Details of the projects are provided in the README file located in their respective folders.
