@@ -13,4 +13,4 @@ This repository contains the following programs built in Python:
 
 **- Time Calculator**
 
-Details of the projects are provided in the README file located in their respective folders.
+Details of the projects are provided in the README files located in their respective folders.
