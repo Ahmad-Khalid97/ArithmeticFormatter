@@ -1,4 +1,4 @@
-### Assignment
+### Shape Calculator
 
 In this project, Object-oriented programming is used to create a Rectangle class and a Square class. The Square class is a subclass of Rectangle and inherits methods and attributes.
 
