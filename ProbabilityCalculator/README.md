@@ -1,8 +1,8 @@
 ### Probability Calculator
 
-Suppose there is a hat containing 5 blue balls, 4 red balls, and 2 green balls. What is the probability that a random draw of 4 balls will contain at least 1 red ball and 2 green balls? While it would be possible to calculate the probability using advanced mathematics, an easier way is to write a program to perform a large number of experiments to estimate an approximate probability.
+For this project, a program is written to determine the approximate probability of drawing certain balls randomly from a hat.
 
-For this project, a program is written to determine the approximate probability of drawing certain balls randomly from a hat. 
+Suppose there is a hat containing 5 blue balls, 4 red balls, and 2 green balls. What is the probability that a random draw of 4 balls will contain at least 1 red ball and 2 green balls? While it would be possible to calculate the probability using advanced mathematics, an easier way is to write a program to perform a large number of experiments to estimate an approximate probability.
 
 First, a `Hat` class is created in `prob_calculator.py`. The class takes a variable number of arguments that specify the number of balls of each color that are in the hat. For example, a class object could be created in any of these ways:
 ```
@@ -13,7 +13,7 @@ hat3 = Hat(red=5, orange=4, black=1, blue=0, pink=2, striped=9)
 
 A hat will always be created with at least one ball. The arguments passed into the hat object upon creation is converted to a `contents` instance variable. `contents` is a list of strings containing one item for each ball in the hat. Each item in the list is a color name representing a single ball of that color. For example, if the hat is `{"red": 2, "blue": 1}`, `contents` will be `["red", "red", "blue"]`.
 
-The `Hat` class contains a `draw` method that accepts an argument indicating the number of balls to draw from the hat. This method shall remove balls at random from `contents` and return those balls as a list of strings. The balls will not go back into the hat during the draw, similar to an urn experiment without replacement. If the number of balls to draw exceeds the available quantity, all the balls are returned.
+The `Hat` class contains a `draw` method that accepts an argument indicating the number of balls to draw from the hat. This method removes balls at random from `contents` and return those balls as a list of strings. The balls will not go back into the hat during the draw. If the number of balls to draw exceeds the available quantity, all the balls are returned.
 
 Next, an `experiment` function in `prob_calculator.py` (not inside the `Hat` class) is created. This function accepts the following arguments:
 * `hat`: A hat object containing balls that shall be copied inside the function.
@@ -23,7 +23,7 @@ Next, an `experiment` function in `prob_calculator.py` (not inside the `Hat` cla
 
 The `experiment` function returns a probability. 
 
-For example, let's say that you want to determine the probability of getting at least 2 red balls and 1 green ball when you draw 5 balls from a hat containing 6 black, 4 red, and 3 green. To do this, `N` experiments are performed, count how many times i.e. `M` there is probability of getting at least 2 red balls and 1 green ball, and the probability is then estimated as `M/N`. Each experiment consists of starting with a hat containing the specified balls, drawing a number of balls, and checking if we got the balls we were attempting to draw.
+For example, to determine the probability of getting at least 2 red balls and 1 green ball when 5 balls from a hat containing 6 black, 4 red, and 3 green are drawn. To do this, `N` experiments are performed, count how many times i.e. `M` there is probability of getting at least 2 red balls and 1 green ball, and the probability is then estimated as `M/N`. Each experiment consists of starting with a hat containing the specified balls, drawing a number of balls, and checking if we got the balls we were attempting to draw.
 
 Here is how the `experiment` function is called based on the example above with 2000 experiments:
 
